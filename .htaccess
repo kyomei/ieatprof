@@ -23,4 +23,5 @@
     # Para que esta pasta não seja mais exibida, adicione as seguintes linhas de código em sua .htaccess:
     RewriteRule ^(.*)$ public/$1 [L] 
 
+
 </IfModule>

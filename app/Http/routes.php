@@ -11,22 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('quem-somos', function(){
-    return '<h1>Página quem somos</h1>';
-});
-Route::get('fale-conosco', function(){
-    return '<h1>Página fale-conosco</h1>';
-});
-Route::get('cursos', function(){
-    return '<h1>Página cursos</h1>';
-});
-Route::get('cursos/cursos-livres', function(){
-    return '<h1>Página cursos livres</h1>';
-});
-Route::get('cursos/pacote-de-cursos', function(){
-    return '<h1>Página pacote de cursos</h1>';
-});
+Route::get('/','SiteController@home');
+Route::get('/quem-somos', 'SiteController@quem_somos');
+Route::get('/fale-conosco', 'SiteController@fale_conosco');
+Route::get('/cursos', 'SiteController@cursos');
+Route::get('/cursos/cursos-livres', 'SiteController@cursos_livres');
+Route::get('/cursos/pacote-de-cursos','SiteController@pacote_de_cursos');

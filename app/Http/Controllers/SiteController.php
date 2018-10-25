@@ -13,7 +13,7 @@ class SiteController extends Controller {
     }
     /* Método responsável pela exibição das informações na pág fale-conosco */
     public function fale_conosco(){
-        return '<h1>Página fale-conosco</h1>';
+        return '<h1>Página fale-conosco</h1>';  
         
     }
     /* Método responsável pela exibição das informações na pág cursos */

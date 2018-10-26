@@ -33,7 +33,9 @@ class SiteController extends Controller {
     
     /* Método responsável pela exibição das informações na pág cursos-livres */
     public function cursos_livres(){
-        return '<h1>Página cursos livres</h1>';
+        //$html = '<h1>Página cursos livres</h1>';
+        $modulos = DB::select('select * from modulos');
+        return view('listagem')->with('modulos', $modulos);
     }
     
     /* Método responsável pela exibição das informações na pág pacote-de-cursos */

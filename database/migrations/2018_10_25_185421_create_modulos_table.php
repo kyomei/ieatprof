@@ -13,6 +13,10 @@ class CreateModulosTable extends Migration
     public function up()
     {
         Schema::create('modulos', function (Blueprint $table) {
+            
+            // Define o motor do banco
+            $table->engine = 'InnoDB';
+            
             $table->increments('id_modulo');
             $table->string('nome_modulo', 100)->unique();
             $table->longText('descricao_modulo');
@@ -22,8 +26,15 @@ class CreateModulosTable extends Migration
             $table->boolean('gratuito_modulo');
             $table->string('color_class_modulo', 50);
             $table->string('url_img_modulo', 255);
-            $table->string('url_page_modulo');
-            $table->timestamp('dataCadastro_modulo');
+            $table->string('url_page_modulo', 255);
+            
+            //cria duas colunas no banco: create_at e update_at
+            $table->timestamps();
+            
+            // cria uma coluna delete_at, com ela ao invés de apagarmos um registro no banco
+            //  quando um usuário deleta sua conta ele altera o status dessa linha do usuário,
+            //   mostrando que ele foi deletado sem apagar o seu registro
+            $table->SoftDeletes();
         });
     }
 

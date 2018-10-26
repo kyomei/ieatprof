@@ -13,7 +13,11 @@ class CreateCursosTable extends Migration
     public function up()
     {
         Schema::create('cursos', function (Blueprint $table) {
-           $table->increments('id_curso', 11);
+           
+            // Define o motor do banco
+            $table->engine = 'InnoDB';
+            
+            $table->increments('id_curso', 11);
             $table->string('nome_curso', 100)->unique();
             $table->longText('descricao_curso');
             $table->tinyInteger('ordem_curso')->unsigned();
@@ -25,7 +29,14 @@ class CreateCursosTable extends Migration
             $table->string('sigla_curso', 20);
             $table->string('url_img_curso', 255);
             $table->string('url_page_curso', 255);
-            $table->timestamp('dataCadastro_curso');
+            
+             //cria duas colunas no banco: create_at e update_at
+            $table->timestamps();
+            
+            // cria uma coluna delete_at, com ela ao invés de apagarmos um registro no banco
+            //  quando um usuário deleta sua conta ele altera o status dessa linha do usuário,
+            //   mostrando que ele foi deletado sem apagar o seu registro
+            $table->SoftDeletes();
         });
     }
 

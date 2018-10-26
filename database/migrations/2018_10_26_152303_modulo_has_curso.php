@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCursosTable extends Migration
+class ModuloHasCurso extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateCursosTable extends Migration
      */
     public function up()
     {
-        Schema::create('cursos', function (Blueprint $table) {
+        Schema::create('modulo_has_curso', function (Blueprint $table) {
            $table->increments('id_curso', 11);
             $table->string('nome_curso', 100)->unique();
             $table->longText('descricao_curso');
@@ -36,6 +36,7 @@ class CreateCursosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cursos');
+        // se tabela existir exclua
+        Schema::dropIfExists('modulo_has_curso');
     }
 }

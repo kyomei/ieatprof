@@ -14,10 +14,10 @@ class CreateModulosTable extends Migration
     {
         Schema::create('modulos', function (Blueprint $table) {
             $table->increments('id_modulo');
-            $table->string('nome_modulo', 100);
+            $table->string('nome_modulo', 100)->unique();
             $table->longText('descricao_modulo');
-            $table->integer('duracao_horas_modulo');
-            $table->integer('duracao_meses_modulo');           
+            $table->tinyInteger('duracao_horas_modulo')->unsigned();
+            $table->tinyInteger('duracao_meses_modulo')->unsigned();           
             $table->boolean('status_modulo');
             $table->boolean('gratuito_modulo');
             $table->string('color_class_modulo', 50);
@@ -34,6 +34,6 @@ class CreateModulosTable extends Migration
      */
     public function down()
     {
-        Schema::drop('modulos');
+        Schema::dropIfExists('modulos');
     }
 }

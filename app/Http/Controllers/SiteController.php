@@ -1,10 +1,20 @@
 <?php namespace ieatprof\Http\Controllers;
 
+// Classe para acessar metodos do banco de dados
+use Illuminate\Support\Facades\DB;
+
 class SiteController extends Controller {
     
     /* Método responsável pela exibição das informações na pág home */
     public function home(){
-          return '<h1>Página incial</h1>';
+          $html = '<h1>Página incial</h1>';
+          $html .= '<ul>';
+          $modulos = DB::select('select * from modulos');
+          foreach ($modulos as $modulo){
+              $html .= '<li>Modulo: '.$modulo->nome_modulo .'</li>';
+          }
+          $html .= '</ul>';
+          return $html;
     }
     
     /* Método responsável pela exibição das informações na pág quem-somos */

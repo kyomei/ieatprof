@@ -27,8 +27,8 @@ class CreateCursosTable extends Migration
             $table->boolean('situacao');
             $table->string('color_class_curso', 50);
             $table->string('sigla_curso', 20);
-            $table->string('url_img_curso', 255);
-            $table->string('url_page_curso', 255);
+            $table->string('thumbnail_curso', 255);
+            $table->string('slug_curso', 255);
             
              //cria duas colunas no banco: create_at e update_at
             $table->timestamps();

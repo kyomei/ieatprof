@@ -26,8 +26,8 @@ class Curso extends Model
         'situacao',
         'color_class_curso',
         'sigla_curso',
-        'url_img_curso',
-        'url_page_curso'
+        'thumbnail_curso',
+        'slug_curso'
         ];
     
        

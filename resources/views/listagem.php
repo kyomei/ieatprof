@@ -7,16 +7,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>Listagem de cursos livres</h1>
-        <table class="table">            
-            <?php foreach ($modulos as $modulo) : ?>
-                <tr>
-                    <td><?= $modulo->nome_modulo ?></td>
-                </tr>
-            <?php endforeach ?>
-        </table>
+        <div class="container">      
+            <h1>Listagem de cursos livres</h1>
+            <table class="table table-striped table-bordered table-hover">            
+                <?php foreach ($modulos as $modulo) : ?>
+                    <tr>
+                        <td><?= $modulo->nome_modulo ?></td>
+                        <td><a href="/cursos/cursos-livres/<?= $modulo->url_page_modulo ?>">Visualizar</a></td>
+                    </tr>
+                <?php endforeach ?>
+            </table>
 
-
+        </div>
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

@@ -25,8 +25,8 @@ class CreateModulosTable extends Migration
             $table->boolean('status_modulo');
             $table->boolean('gratuito_modulo');
             $table->string('color_class_modulo', 50);
-            $table->string('url_img_modulo', 255);
-            $table->string('url_page_modulo', 255);
+            $table->string('thumbnail_modulo', 255);
+            $table->string('slug_modulo', 255);
             
             //cria duas colunas no banco: create_at e update_at
             $table->timestamps();

@@ -21,8 +21,8 @@ class Modulo extends Model
         'status_modulo', 
         'gratuito_modulo', 
         'color_class_modulo', 
-        'url_img_modulo', 
-        'url_page_modulo'
+        'thumbnail_modulo', 
+        'slug_modulo'
         ];
     
     //Deseja trabalhar ou não com campos created_at e updated_at do tipo timestamp nessa tabela.

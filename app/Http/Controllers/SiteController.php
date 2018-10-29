@@ -49,8 +49,8 @@ class SiteController extends Controller {
     public function cursos_livres_detalhes() {
         //   $id = Request::path();
         // echo $id;
-        $id = Request::route('id');
-        $result = DB::select('select * from modulos where nome_modulo = ?', [$id]);
+        $id = Request::route('name');
+        $result = DB::select('select * from modulos where slug_modulo = ?', [$id]);
         if (empty($result)) {
             return "Curso não encontrado";
         }

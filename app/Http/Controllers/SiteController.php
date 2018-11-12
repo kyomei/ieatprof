@@ -43,7 +43,7 @@ class SiteController extends Controller {
     public function cursos_livres() {
 
         $modulos = DB::select('select * from modulos');
-        return view('listagem')->with('modulos', $modulos);
+        return view('cursos-livres')->with('modulos', $modulos);
     }
 
     public function cursos_livres_detalhes() {

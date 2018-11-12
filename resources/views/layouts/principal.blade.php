@@ -2,19 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Instituto Educacional Alto Tietê</title>
+        <title>@yield('title') - Instituto Educacional Alto Tietê</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
-        <pre><?= print_r($modulo) ?></pre>
+        
+       @include('layouts.header')
+       
+       @include('layouts.navbar')
+
         <div class="container">
-            
+
             @yield('conteudo')
-            
+
         </div>
 
-
+       @include('layouts.footer')
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Popper JS -->

@@ -10,14 +10,15 @@ class SiteController extends Controller {
     /* Método responsável pela exibição das informações na pág home */
 
     public function home() {
-        $html = '<h1>Página incial</h1>';
+       /* $html = '<h1>Página incial</h1>';
         $html .= '<ul>';
         $modulos = DB::select('select * from modulos');
         foreach ($modulos as $modulo) {
             $html .= '<li>Modulo: ' . $modulo->nome_modulo . '</li>';
         }
         $html .= '</ul>';
-        return $html;
+        return $html;*/
+         return view('home');
     }
 
     /* Método responsável pela exibição das informações na pág quem-somos */

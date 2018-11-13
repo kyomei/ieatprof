@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,MAAO,CACH,KAAK,CCkBD,IAAO,CDjBX,gBAAgB,CCkBT,OAAO,CDjBd,iBAAW,CACP,gBAAgB,CCcjB,OAAO,CDbN,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CAClB,KAAK,CCYL,IAAO,CDXP,mBAAC,CACG,KAAK,CCUT,IAAO,CDPX,SAAE,CACE,SAAS,CAAE,GAAG,CAElB,aAAO,CACH,UAAU,CAAE,GAAG",
+"sources": ["scss/_footer.scss","scss/_variables.scss"],
+"names": [],
+"file": "style.css"
+}

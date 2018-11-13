@@ -1,0 +1,21 @@
+
+/* footer website */
+footer {
+    color: $white;
+    background-color: $green-bg;
+    .copyright {
+        background-color: $dark;
+        font-size: 16px;
+        text-align: center;
+        color: $white;
+        a{
+            color: $white;
+        }
+    }
+    h1{
+        font-size: 2em;
+    }
+    iframe {
+        margin-top: 5px;
+    }
+}

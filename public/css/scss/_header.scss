@@ -1,11 +1,15 @@
-
-/* header website */
-.carousel-item {
-    height: 65vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+header {
+    padding-bottom: 7px;
+    .contact {
+        text-align: right;
+        strong {
+            font-size: 24px;
+            font-family: 'Bree Serif', sans-serif;
+            color: $green-bg;
+        }
+        div {
+            line-height: 17px;
+            margin-top: 30px;
+        }
+    }
 }

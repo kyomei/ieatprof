@@ -14,7 +14,8 @@
         @include('layouts.header')
 
         @include('layouts.navbar')
-
+        
+        @include('layouts.carousel')
         <div class="container">
 
             @yield('conteudo')
@@ -22,9 +23,9 @@
         </div>
 
         @include('layouts.footer')
-        
+
         <script src="https://ieatprofissionalizante.com.br/assets/js/font-awesome.js"></script>
-        
+
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Popper JS -->

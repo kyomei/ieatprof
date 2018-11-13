@@ -1,24 +1,27 @@
-<!-- Sidebar start -->
-<nav id="sidebar">
-    <div id="dismiss">
-        <i class="fas fa-caret-left"></i>
-    </div>
-    <div class="sidebar-header">
-        <img src="https://ieatprofissionalizante.com.br/assets/img/layout/logo_white.png" class="img-responsive" style="color:white" alt="Logo ieat profissionalizante">
-    </div>
-
-    <ul class="list-unstyled components">        
-        <li class="active"><a href="https://ieatprofissionalizante.com.br/">Home</a></li>
-        <li class=""><a href="https://ieatprofissionalizante.com.br/quem-somos">Quem somos</a></li>
-        <li class=""><a href="https://ieatprofissionalizante.com.br/fale-conosco">Fale conosco</a></li>
-        <li class=" ">
-            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Cursos</a>
-            <ul class="collapse list-unstyled" id="homeSubmenu">
-               <li><a href="https://ieatprofissionalizante.com.br/cursos/cursos-livres">Cursos livres</a></li>
-               <li class="hidden"><a href="https://ieatprofissionalizante.com.br/cursos/cursos-gratuitos">Cursos gratuitos</a></li>
-                <li><a href="https://ieatprofissionalizante.com.br/cursos/pacote-de-cursos">Pacote de cursos</a></li>
-            </ul>
-        </li>       
-    </ul>
-</nav>
-<!-- fim navbar -->
+fasdfsad  
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home  <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>

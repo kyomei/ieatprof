@@ -1,5 +1,34 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 768px) { 
+    header {
+        .row:first-child{
+            background-color: $green-bg;
+            color: $white;            
+            display: block;
+        }
+        .contact {
+            strong {
+                font-size: 18px !important;
+                color: $red;
+            }
+            div{
+                margin-top: 0px !important;
+            }
+        }
+        .img-logo{
+            display: block;
+            margin: auto;
+            padding-top: 7px;
+        }
+    }
+}
+
 header {
     padding-bottom: 7px;
+    padding-top: 7px;
+    .row:first-child{
+        display: none;
+    }
     .contact {
         text-align: right;
         strong {

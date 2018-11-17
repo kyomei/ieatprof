@@ -8,15 +8,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item {{ Request::segment(1) === null ? 'active' : null }}">
               <a class="nav-link" href="#">Home  <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quem somos</a>
+            <li class="nav-item {{ Request::segment(1) === 'quem-somos' ? 'active' : null }}">
+              <a class="nav-link" href="{{url('quem-somos')}}">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Fale conosco</a>
+              <a class="nav-link" href="{{url('fale-conosco')}}">Fale conosco</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Cursos</a>

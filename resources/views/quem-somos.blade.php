@@ -1,9 +1,9 @@
 @extends('layouts.principal')
 
-@section('title', 'Página inicial')
+@section('title', 'Quem somos')
 
 
 @section('conteudo')
-<p>home</p>
+<p>Quem somos</p>
 
 @stop

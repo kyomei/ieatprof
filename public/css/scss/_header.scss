@@ -1,24 +1,25 @@
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 768px) { 
+@media only screen and (max-width: 768px) { 
     header {
+        padding-top: 0px !important;
         .row:first-child{
-            background-color: $green-bg;
-            color: $white;            
-            display: block;
+            background-color: $green-bg !important;
+            color: $white !important;            
+            display: block  !important;
+            text-align: center;
         }
         .contact {
             strong {
                 font-size: 18px !important;
-                color: $red;
             }
             div{
                 margin-top: 0px !important;
             }
         }
         .img-logo{
-            display: block;
-            margin: auto;
-            padding-top: 7px;
+            display: block !important;
+            margin: auto !important;
+            padding-top: 7px !important;
         }
     }
 }
@@ -38,7 +39,7 @@ header {
         }
         div {
             line-height: 17px;
-            margin-top: 30px;
+           margin-top: 20px;
         }
     }
 }

@@ -24,13 +24,13 @@ class SiteController extends Controller {
     /* Método responsável pela exibição das informações na pág quem-somos */
 
     public function quem_somos() {
-        return '<h1>Página quem somos</h1>';
+        return view('quem-somos');
     }
 
     /* Método responsável pela exibição das informações na pág fale-conosco */
 
     public function fale_conosco() {
-        return '<h1>Página fale-conosco</h1>';
+        return view('fale-conosco');
     }
 
     /* Método responsável pela exibição das informações na pág cursos */

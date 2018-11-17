@@ -1,9 +1,9 @@
 @extends('layouts.principal')
 
-@section('title', 'Página inicial')
+@section('title', 'Fale conosco')
 
 
 @section('conteudo')
-<p>home</p>
+<p>Fale conosco</p>
 
 @stop
